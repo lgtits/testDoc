@@ -1,0 +1,1 @@
+function t(e){let r=typeof e!="string"?JSON.stringify(e):e;try{r=JSON.parse(r)}catch{return!1}return typeof r=="object"&&r!==null}function n(e){return!!/^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(e)}const s=e=>e.hasOwnProperty("encrypted");var o={isJson:t,isEmail:n,isEncrypted:s};export{o as v};
