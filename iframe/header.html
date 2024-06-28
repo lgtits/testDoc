@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>header</title>
+    <style type="text/css">
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      * {
+        font-family: 'Noto Sans TC', sans-serif;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+        color: #3f3f3f;
+      }
+      .flex {
+        display: flex;
+      }
+
+      .justify-between {
+        justify-content: space-between;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .layout-header {
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #cccccc;
+      }
+      .layout-header .header-wrap {
+        width: 100%;
+        padding: 10px 0 20px;
+        position: relative;
+        z-index: 1;
+        max-width: 1200px;
+        height: 93px;
+      }
+      .layout-header .header-wrap .logo-search {
+        align-items: center;
+      }
+      .layout-header .header-wrap .logo-search .logo {
+        font-weight: 800;
+        font-size: 20px;
+        margin-right: 40px;
+        color: #3f3f3f;
+        width: 300px;
+        text-align: right;
+      }
+      .layout-header .header-wrap .logo-search .search-input-box {
+        max-width: 360px;
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        border-radius: 4px;
+      }
+      .layout-header .header-wrap .logo-search .search-input {
+        border: 1px solid #ccc;
+      }
+      .layout-header .header-wrap .logo-search .search-input .q-field__inner {
+        height: 40px;
+      }
+      .layout-header
+        .header-wrap
+        .logo-search
+        .search-input
+        .q-field__inner
+        .q-field__control {
+        border-radius: 4px;
+        color: #3f3f3f;
+        padding-left: 16px;
+        padding-right: 90px;
+        height: 40px;
+        min-height: auto;
+      }
+      .layout-header
+        .header-wrap
+        .logo-search
+        .search-input
+        .q-field__inner
+        .q-field__control
+        .q-field__prepend,
+      .layout-header
+        .header-wrap
+        .logo-search
+        .search-input
+        .q-field__inner
+        .q-field__control
+        .q-field__append {
+        height: 40px;
+      }
+      .layout-header .header-wrap .logo-search .search-input__search-btn {
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+        background-color: #3f3f3f;
+        color: #fff;
+        height: 40px;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .layout-header .header-wrap .logo-search .search-input__search-btn:hover {
+        opacity: 0.8;
+      }
+      .layout-header .header-wrap .logo-search .search-select {
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        background-color: #f4f6f9;
+      }
+      .layout-header .header-wrap .logo-search .search-select .q-field__inner {
+        height: 40px;
+      }
+      .layout-header
+        .header-wrap
+        .logo-search
+        .search-select
+        .q-field__inner
+        .q-field__control {
+        border-radius: 4px;
+        color: #3f3f3f;
+        padding-left: 16px;
+        padding-right: 8px;
+        height: 40px;
+        min-height: auto;
+      }
+      .layout-header
+        .header-wrap
+        .logo-search
+        .search-select
+        .q-field__inner
+        .q-field__control
+        .q-field__prepend,
+      .layout-header
+        .header-wrap
+        .logo-search
+        .search-select
+        .q-field__inner
+        .q-field__control
+        .q-field__append {
+        height: 40px;
+      }
+      .layout-header
+        .header-wrap
+        .logo-search
+        .search-select
+        .q-field__inner
+        .q-field__control
+        .q-field__native {
+        height: 40px;
+        min-height: auto;
+      }
+      .layout-header
+        .header-wrap
+        .logo-search
+        .search-select
+        .q-field__inner
+        .q-field__control:after {
+        height: 40px;
+      }
+      .layout-header .header-wrap .menu-buttons {
+        font-size: 14px;
+        text-align: right;
+      }
+      .layout-header .header-wrap .menu-buttons .links {
+        color: rgba(63, 63, 63, 0.7);
+        column-gap: 46px;
+      }
+      .layout-header .header-wrap .menu-buttons .links .link {
+        text-decoration: none;
+        padding: 8px 10px;
+        position: relative;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .layout-header .header-wrap .menu-buttons .links .link:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-v-18ca20c2="" class="layout-header">
+      <div class="header-wrap flex justify-between items-center">
+        <div class="logo-search row">
+          <a href="/" target="_parent" class="logo">
+            { P O W E R C A B L E }
+          </a>
+        </div>
+        <div class="menu-buttons">
+          <div class="links flex">
+            <a href="/" target="_parent" class="link crowd-sourcing">
+              Crowd Sourcing</a
+            >
+            <a href="/" target="_parent" class="link landing-page">
+              Landing Page</a
+            >
+            <a href="/" target="_parent" class="link search-product">
+              Search Product</a
+            >
+            <a href="/" target="_parent" class="link leave-messages">
+              Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const logo = document.querySelector('.logo');
+      const landingPage = document.querySelector('.landing-page');
+      const searchProduct = document.querySelector('.search-product');
+      const leaveMessages = document.querySelector('.leave-messages');
+      const crowdSourcing = document.querySelector('.crowd-sourcing');
+
+      const crowdSourcingTexts = {
+        // url: 'en/crowdSourcing',
+        langs: [
+          {
+            lang: 'zh',
+            text: '協作編輯',
+            url: '/zh/crowdsourcing',
+          },
+          {
+            lang: 'en',
+            text: 'Crowdsourcing',
+            url: '/en/crowdsourcing',
+          },
+          {
+            lang: 'ja',
+            text: 'クラウドソーシング',
+            url: '/en/crowdsourcing',
+          },
+        ],
+      };
+
+      const landingPageTexts = {
+        // url: '/statics/innerPage_en.html',
+        langs: [
+          {
+            lang: 'zh',
+            text: '銷售頁',
+            url: '/statics/innerPage_zh.html',
+          },
+          {
+            lang: 'en',
+            text: 'Landing Page',
+            url: '/statics/innerPage_en.html',
+          },
+          {
+            lang: 'ja',
+            text: 'ランディングページ',
+            url: '/statics/innerPage_en.html',
+          },
+        ],
+      };
+
+      const searchProductTexts = {
+        // url: '/statics/innerPage_iframe.html',
+        langs: [
+          {
+            lang: 'zh',
+            text: '產品搜尋',
+            url: '/zh/products',
+          },
+          {
+            lang: 'en',
+            text: 'Search Product',
+            url: '/en/products',
+          },
+          {
+            lang: 'ja',
+            text: '製品検索',
+            url: '/ja/products',
+          },
+        ],
+      };
+
+      const leaveMessagesTexts = {
+        // url: '/statics/innerPage_en_form.html',
+        langs: [
+          {
+            lang: 'zh',
+            text: '留言表單',
+            url: '/zh/contact-us',
+          },
+          {
+            lang: 'en',
+            text: 'Contact Us',
+            url: '/en/contact-us',
+          },
+          {
+            lang: 'ja',
+            text: 'メッセージ送信',
+            url: '/ja/contact-us',
+          },
+        ],
+      };
+
+      // if (landingPage) {
+      //   landingPage.href = landingPageTexts.url;
+      // }
+      // if (searchProduct) {
+      //   searchProduct.href = searchProductTexts.url;
+      // }
+      // if (leaveMessages) {
+      //   leaveMessages.href = leaveMessagesTexts.url;
+      // }
+      // if (crowdSourcing) {
+      //   crowdSourcing.href = crowdSourcingTexts.url;
+      // }
+
+      window.addEventListener('message', function (e) {
+        if (e.data.logo) {
+          logo.innerText = e.data.logo;
+        }
+
+        // if(e.origin !== 'http://portal.stg.kuku.succ.work/') {
+        //   return;
+        // }
+        if (e.data.lang) {
+          landingPage.innerText = landingPageTexts.langs.find(
+            (lang) => lang.lang === e.data.lang
+          ).text;
+          landingPage.href = landingPageTexts.langs.find(
+            (lang) => lang.lang === e.data.lang
+          ).url;
+          searchProduct.innerText = searchProductTexts.langs.find(
+            (lang) => lang.lang === e.data.lang
+          ).text;
+          searchProduct.href = searchProductTexts.langs.find(
+            (lang) => lang.lang === e.data.lang
+          ).url;
+          leaveMessages.innerText = leaveMessagesTexts.langs.find(
+            (lang) => lang.lang === e.data.lang
+          ).text;
+          leaveMessages.href = leaveMessagesTexts.langs.find(
+            (lang) => lang.lang === e.data.lang
+          ).url;
+          crowdSourcing.innerText = crowdSourcingTexts.langs.find(
+            (lang) => lang.lang === e.data.lang
+          ).text;
+          crowdSourcing.href = crowdSourcingTexts.langs.find(
+            (lang) => lang.lang === e.data.lang
+          ).url;
+        }
+      });
+    </script>
+  </body>
+</html>
